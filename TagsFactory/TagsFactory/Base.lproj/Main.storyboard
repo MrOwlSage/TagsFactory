@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EKR-Tb-fna">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTV-xV-gMv">
+                                <rect key="frame" x="76" y="396" width="223" height="45"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.70588235290000001" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Black Style Tag">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="styleButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e79-Lj-Oh3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag Factory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkp-jv-C7M">
+                                <rect key="frame" x="16" y="214" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXp-RQ-rOz">
+                                <rect key="frame" x="76" y="311" width="223" height="45"/>
+                                <color key="backgroundColor" red="0.13725490196078433" green="0.70588235294117641" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ubm-UG-NtS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="White Style Tag">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="styleButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ku-eB-btl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lkp-jv-C7M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="5Rx-PP-i7u"/>
+                            <constraint firstItem="QXp-RQ-rOz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="8Zi-sf-XkD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lkp-jv-C7M" secondAttribute="trailing" id="D0a-ea-KTp"/>
+                            <constraint firstItem="Lkp-jv-C7M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GTp-cA-P6P"/>
+                            <constraint firstItem="qTV-xV-gMv" firstAttribute="height" secondItem="QXp-RQ-rOz" secondAttribute="height" id="Ua9-gW-10R"/>
+                            <constraint firstItem="qTV-xV-gMv" firstAttribute="top" secondItem="QXp-RQ-rOz" secondAttribute="bottom" constant="40" id="VV2-Nn-XiJ"/>
+                            <constraint firstItem="QXp-RQ-rOz" firstAttribute="centerX" secondItem="Lkp-jv-C7M" secondAttribute="centerX" id="YB1-9i-mzb"/>
+                            <constraint firstItem="qTV-xV-gMv" firstAttribute="centerX" secondItem="Lkp-jv-C7M" secondAttribute="centerX" id="eKd-BH-oAA"/>
+                            <constraint firstItem="qTV-xV-gMv" firstAttribute="width" secondItem="QXp-RQ-rOz" secondAttribute="width" id="g1a-QK-twx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QXp-RQ-rOz" secondAttribute="trailing" constant="60" id="y9n-Ls-hJg"/>
+                            <constraint firstItem="QXp-RQ-rOz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zxJ-Xx-ijb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RCb-2B-ZOG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-364" y="-644"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SMt-Ta-fv1">
+            <objects>
+                <navigationController id="EKR-Tb-fna" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Ui-aO-Rq5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="J76-89-73X"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y0y-5G-YZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1146" y="-643"/>
+        </scene>
+        <!--Tag View Controller-->
+        <scene sceneID="PGM-wr-nAH">
+            <objects>
+                <viewController storyboardIdentifier="TagViewController" id="Ssb-iX-EQQ" customClass="TagViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gO7-Af-Ig1"/>
+                        <viewControllerLayoutGuide type="bottom" id="U0W-Db-EgT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E4B-Xx-Gcn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pug-V3-3yc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Doh-Gi-UO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="385" y="-645"/>
+        </scene>
+    </scenes>
+</document>
